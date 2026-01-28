@@ -916,76 +916,29 @@ des points de vue partiels présentés comme des vérités. L’IA n’a pas d�
                             </div>
 
                             <!-- SECTION 5 : ATELIERS DE CRÉATION AVEC IA -->
-                            <div class="ia2-sub-item">
+                          <div class="ia2-sub-item">
                                 <div class="ia2-sub-header" onclick="toggleSubItem(event, this.parentNode)">
                                     <div class="ia2-sub-header-left">
                                         <i class="fa-solid fa-laptop-code icon-left"></i> 
-                                        <span>Ateliers de création avec des outils d'IA générative</span>
+                                        <span>Ateliers de création avec l'IA</span>
                                     </div>
                                     <i class="fa-solid fa-chevron-down ia2-sub-arrow"></i>
                                 </div>
                                 <div class="ia2-sub-content">
-                                    <p style="margin-bottom: 20px; line-height: 1.6;">Ces trois ateliers progressifs vous permettront d'expérimenter concrètement les outils d'IA générative dans une démarche pédagogique structurée : <strong>comprendre, questionner, créer</strong> tout en respectant le cadre d'usage (plus value, frugalité, transparence...).</p>
+                                    <p style="margin-bottom: 20px; line-height: 1.6;">
+                                        En binôme, concevoir un <strong>micro-module</strong> (atelier / support / activité / exercice…) pour élèves et professeurs, ancré dans les trois piliers de la littératie critique de l’IA : 
+                                        <strong>Comprendre, Questionner, Utiliser responsablement</strong>, et aboutissant à un livrable immédiatement réutilisable dans l’établissement (séance prête à animer, affiche, capsule, activité, base de charte).
+                                    </p>
 
-                                    <!-- Atelier 1 -->
-                                    <div class="ia3-sub-item">
-                                        <div class="ia3-sub-header" onclick="toggleLevel3(this)">
-                                            <div><i class="fa-solid fa-film"></i> Atelier 1 - COMPRENDRE : Créer une vidéo pédagogique explicative</div>
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                        </div>
-                                        <div class="ia3-sub-content">
-                                            <p><strong>Objectif :</strong> Transformer vos ressources pédagogiques en contenu multimédia accessible.</p>
-                                            <p style="margin-top: 10px;">À partir de vos ressources existantes (cours personnels, vidéos, documents en ligne), créez une courte vidéo pédagogique destinée à vos élèves avec <strong>NotebookLM</strong>.</p>
-                                            <p style="margin-top: 10px;"><strong>Exemple pratique :</strong> Expliquer simplement "Comment fonctionnent les IA génératives ?"</p>
-                                            <ul class="content-list" style="margin-top: 10px;">
-                                                <li>Rassemblez 3-5 sources complémentaires sur votre sujet.</li>
-                                                <li>Importez-les dans NotebookLM (PDF, liens web, notes textuelles).</li>
-                                                <li>Générez une vidéo pédagogique.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- Atelier 2 -->
-                                    <div class="ia3-sub-item">
-                                        <div class="ia3-sub-header" onclick="toggleLevel3(this)">
-                                            <div><i class="fa-solid fa-magnifying-glass"></i> Atelier 2 - QUESTIONNER : Concevoir une fiche pédagogique + QCM critique</div>
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                        </div>
-                                        <div class="ia3-sub-content">
-                                            <p>Créer une séquence pédagogique pour votre prochain cours.</p>
-                                            <p style="margin-top: 10px;"><strong>Exemple pratique :</strong> "Peut-on faire confiance à l'IA ?" Concevez une fiche pédagogique pour des élèves de 2de accompagnée d'un QCM.</p>
-                                            
-                                            <div style="margin-top: 15px;">
-                                                <strong>🛠️ Outils à disposition :</strong>
-                                                <p>Le LLM de votre choix (Mistral, Euria, ChatGPT...).</p>
-                                            </div>
-
-                                            <div style="margin-top: 15px; background: #f0f9ff; padding: 15px; border-radius: 8px; border-left: 4px solid #0ea5e9;">
-                                                <strong>🎓 Démarche pédagogique :</strong>
-                                                <p>Utilisez une ou des IA génératives, vérifiez le contenu obtenu, corrigez, améliorez, testez...</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Atelier 3 -->
-                                    <div class="ia3-sub-item">
-                                        <div class="ia3-sub-header" onclick="toggleLevel3(this)">
-                                            <div><i class="fa-solid fa-palette"></i> Atelier 3 - CRÉER : Réaliser une infographie à partir de sources</div>
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                        </div>
-                                        <div class="ia3-sub-content">
-                                            <p><strong>Objectif :</strong> Synthétiser et communiquer visuellement des informations complexes.</p>
-                                            
-                                            <div style="margin-top: 15px;">
-                                                <strong>🎯 Votre mission :</strong>
-                                                <p>Créer un document visuel de référence à partir de sources multiples.</p>
-                                                <p><strong>Exemple pratique :</strong> Concevoir une "Charte d'utilisation responsable de l'IA" pour votre établissement.</p>
-                                            </div>
-
-                                            <div style="margin-top: 15px;">
-                                                <strong>✨ Outils recommandés :</strong>
-                                                <p>NotebookLM, Gamma par exemple.</p>
-                                            </div>
+                                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 10px;">
+                                        <strong style="display: block; margin-bottom: 15px; color: var(--theme-ia-2-color);"><i class="fa-solid fa-list-check"></i> Organisation de l’activité (en 4 temps) :</strong>
+                                        <ul class="content-list">
+                                            <li><strong>Idéation + travail du prompt :</strong> choisir le livrable, préciser l’objectif pédagogique, formuler des prompts efficaces (rôle, contexte, tâche, format, contraintes).</li>
+                                            <li><strong>Appropriation de l’outil :</strong> prise en main rapide de l’outil retenu (IA, outil de création, quiz, vidéos…), réglages et contraintes (niveau, temps, données).</li>
+                                            <li><strong>Test :</strong> générer un premier prototype, le mettre en situation (comme si on était élève), ajuster le scénario et le support.</li>
+                                            <li><strong>Vérification :</strong> contrôle qualité (exactitude, sources, biais/hallucinations), conformité (données personnelles, droit d’auteur), et “sobriété” (usage frugal et pertinent).</li>
+                                            <li style="margin-top: 10px; border-top: 1px dashed #ddd; padding-top: 10px;"><strong>Dépôt sur l'espace collaboratif :</strong> <a href="https://digipad.app/p/1555239/b9d1cff4e56698" target="_blank" class="resource-link">https://digipad.app/p/1555239/b9d1cff4e56698</a></li>
+                                        </ul>
                                         </div>
                                     </div>
                                 </div>
